@@ -19,12 +19,18 @@ $(window).scroll(()=>{
     if($(this).scrollTop() > 0){
         $("nav").addClass("nav-scrolled");
         $("#whiteLogo").css("display", "none");
+        $("#whiteDLogo").css("display", "none");
         $("#blackLogo").css("display", "block");
+        $("#blackDLogo").css("display", "block");
         $(".mobile-burger .material-symbols-outlined").css("color", "black");
+        $(".links a").css("color", "black");
     }else{
         $("nav").removeClass("nav-scrolled");
         $("#whiteLogo").css("display", "block");
+        $("#whiteDLogo").css("display", "block");
         $("#blackLogo").css("display", "none");
+        $("#blackDLogo").css("display", "none");
+        $(".links a").css("color", "white");
         $(".mobile-burger .material-symbols-outlined").css("color", "white");
     }
 })
