@@ -3,3 +3,16 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
+
+.w9{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.w8{
+    width: 80%;
+    margin: 0 auto;
+}
+.h100{
+    height: 100%;
+}
