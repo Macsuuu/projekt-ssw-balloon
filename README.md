@@ -1,6 +1,6 @@
 # SSW Projekt - Balloon.pl 
 
-Projekt serwisu internetowego firmy prowadzącej loty balonem. Serwis dostarcza użytkownikowi kluczowych informacji na temat firmy oraz pozwala na rezerwacje lotu. Serwis jest tylko fron-endowym modelem, nie działa więc z żadną bazą danych co za tym idzie jest to tylko wersja demonstracyjna. 
+Projekt serwisu internetowego firmy prowadzącej loty balonem. Serwis dostarcza użytkownikowi kluczowych informacji na temat firmy oraz pozwala na rezerwacje lotu. Serwis jest tylko fron-endowym modelem, nie działa więc z żadną bazą danych co za tym idzie jest to tylko wersja demonstracyjna. Serwis wykonany na potrzeby zajęć SSW PJATK g12.
 ## Paleta kolorów
 
 
