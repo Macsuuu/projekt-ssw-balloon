@@ -24,6 +24,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/main.js" defer></script>
+    <script src="js/mainpage.js" defer></script>
 
     <!--Google fonts-->
 
@@ -45,6 +46,7 @@
                     <div class="mobile-logo">
                         <img id="whiteLogo" src="imgs/logo_white.png" alt="Balon Logo">
                         <img id="blackLogo" style="display: none;" src="imgs/logo.png" alt="Balon Logo">
+                        <p>Balloon</p>
                     </div>
                     <div class="mobile-burger">
                     <span class="material-symbols-outlined">
@@ -55,9 +57,9 @@
             </div>
             <div class="mobile-nav-body">
                 <a href="">Strona główna</a>
-                <a href="">Nowości</a>
-                <a href="">Rezerwacje</a>
-                <a href="">Kontakt</a>
+                <a href="nowosci/index.html">Nowości</a>
+                <a href="rezerwacje/index.html">Rezerwacje</a>
+                <a href="kontakt/index.html">Kontakt</a>
             </div>
         </div>
 
@@ -67,12 +69,13 @@
                     <div class="mobile-logo">
                         <img id="whiteDLogo" src="imgs/logo_white.png" alt="Balon Logo">
                         <img id="blackDLogo" style="display: none;" src="imgs/logo.png" alt="Balon Logo">
+                        <p>Balloon</p>
                     </div>
                     <div class="links">
                         <a href="">Strona główna</a>
-                        <a href="">Nowości</a>
-                        <a href="">Rezerwacje</a>
-                        <a href="">Kontakt</a>
+                        <a href="nowosci/index.html">Nowości</a>
+                        <a href="rezerwacje/index.html">Rezerwacje</a>
+                        <a href="kontakt/index.html">Kontakt</a>
                     </div>
                 </div>
 
@@ -89,8 +92,8 @@
             <h1>Balloon</h1>
             <h2>Przeżyj lot balonem</h2>
         </div>
-        <div class="button abs">
-            JUZ OD 499,00 PLN
+        <div class="button abs" onclick="toReservations()">
+            TYLKO 499,00 PLN ZA OSOBE
         </div>
     </div>
 
@@ -101,6 +104,7 @@
             </h3>
             <p>
                 Unieś się w powietrze balonem. Poczuj niesamowite chwile, które zostaną z Tobą do końca życia.
+                Spójrz na warszawę z innej perspektywy. Naprawdę warto.
             </p>
         </div>
 
@@ -110,34 +114,48 @@
             </h3>
             <p>
                 We dwoje płacicie mniej. Jedyne 399,00 PLN za osobę. Przeżyj te chwilę ze swoją drugą połówką.
+                Promocja obowiązuje od 23.04.2024 do 30.08.2024.
             </p>
         </div>
 
-        <div class="button">
-            ZAREZERWUJ TERAZ
-        </div>
+    </div>
+
+    <div class="button mc" onclick="toReservations()">
+        ZAREZERWUJ TERAZ
     </div>
 
     <footer>
 
-        <h3>Balloon Sp. Z. o. o.</h3>
-        <div class="loc">
-            <div class="f">
+        <div class="flx">
+            <div class="ctc">
+                <h3>Balloon Sp. Z. o. o.</h3>
+                <div class="loc">
+                    <div class="f">
                 <span class="material-symbols-outlined">
                 location_on
             </span> ul. Jakaś 19a, <br> 00-000 Warszawa
-            </div>
-        </div>
-        <div class="contact">
-            <div class="f">
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="f">
                 <span class="material-symbols-outlined">
                 phone_in_talk
             </span> +48 000 000 000
-            </div>
-            <div class="f">
+                    </div>
+                    <div class="f">
                 <span class="material-symbols-outlined">
                 mail
             </span> kontakt@balloon.pl
+                    </div>
+                </div>
+            </div>
+            <div class="footerNav">
+                <a href="">Strona główna</a>
+                <a href="nowosci/index.html">Nowości</a>
+                <a href="rezerwacje/index.html">Rezerwacje</a>
+                <a href="kontakt/index.html">Kontakt</a>
+                <a href="">Regulamin usługi</a>
+                <a href="">Polityka prywatności</a>
             </div>
         </div>
         <div class="r">

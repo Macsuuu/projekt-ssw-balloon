@@ -26,5 +26,66 @@
         text-decoration: none;
         color:white;
         padding: 10px 30px;
+        transition: .4s;
     }
+
+    .links a:hover{
+        color: #99FFED !important;
+    }
+
+    .texts{
+        display: flex;
+        align-items: center;
+    }
+
+    .text{
+        margin: 0 20px !important;
+        padding: 80px 100px;
+        background: #f6f6f6;
+        border-radius: 5px;
+        box-shadow: 0 3px 9px rgba(0,0,0,0.1);
+    }
+
+    .flx{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .footerNav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerNav a{
+        color: #9B9B9B;
+        transition: .4s;
+    }
+
+    .footerNav a:hover{
+        color: #84e0cf;
+    }
+
+    .r{
+        margin-top: 50px;
+    }
+
+    .articles{
+        width: 80%;
+    }
+
+    .card-header{
+        font-size: 25px;
+    }
+
+    .card-body{
+        font-size: 20px;
+    }
+
+    .baner-bg img{
+        transform: translateY(-400px);
+    }
+
 }
