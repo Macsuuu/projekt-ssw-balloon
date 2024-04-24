@@ -88,4 +88,25 @@
         transform: translateY(-400px);
     }
 
+    #steps-frame{
+        width: 80%;
+    }
+
+    #thanks, #pds, #rez-form{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .input-field{
+        width: 100%;
+    }
+
+    .input-field input{
+        width: 100%;
+    }
+
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }

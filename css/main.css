@@ -20,3 +20,16 @@
 .mc{
     margin: 50px auto;
 }
+
+.button-group .button{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.warn{
+    background: #ffffd4 !important;
+}
+
+.error{
+    background: #ffa2a2 !important;
+}

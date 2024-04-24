@@ -104,37 +104,164 @@
 
         <div id="step1" class="step">
 
-            <h4>
-                Zarezerwuj lot balonem
-            </h4>
+            <form id="rez-form">
+
+                <h4>
+                    Zarezerwuj lot balonem
+                </h4>
+
+                <p class="note">**Przeloty realizujemy raz dziennie o godz. 11:00</p>
+
+                <div class="input-field">
+                    <input type="date" name="data" id="data" >
+                    <label for="data">Wybierz datę przelotu:</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="number" name="osoby" id="osoby" min="0" max="10" step="1" placeholder=" ">
+                    <label for="osoby">Ilość osób:</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="name" id="name" placeholder=" ">
+                    <label for="name">Imię i nazwisko:</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="email" id="email" placeholder=" ">
+                    <label for="email">Adres e-mail:</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="nrTel" id="tel" placeholder=" ">
+                    <label for="tel">Nr Telefonu:</label>
+                </div>
+
+                <div class="button" onclick="next()">
+                    Przejdź do podsumowania
+                </div>
+
+            </form>
 
         </div>
 
         <div id="step2" class="step">
 
-            <h4>
-                Podsumowanie
-            </h4>
+            <div id="pds">
+                <h4>
+                    Podsumowanie
+                </h4>
+
+                <div class="grid">
+
+                    <div class="summ">
+                        <p class="head2">
+                            Data lotu:
+                        </p>
+                        <p class="ct" id="pdsData">
+                            24.04.2024
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Ilość osób:
+                        </p>
+                        <p class="ct" id="pdsOsoby">
+                            10
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Imię i nazwisko:
+                        </p>
+                        <p class="ct" id="pdsName">
+                            Maciej Bedyk
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Adres email:
+                        </p>
+                        <p class="ct" id="pdsEmail">
+                            maciekbedyk1@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Nr. Tel.:
+                        </p>
+                        <p class="ct" id="pdsTel">
+                            668419894
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Cena:
+                        </p>
+                        <p class="ct" id="pdsPrice">
+                            5999,00 PLN
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="note">
+                    **Płatność na miejscu GOTÓWKĄ.
+                </div>
+
+                <div class="button-group">
+                    <div class="button" onclick="next()">
+                        Dokonaj rezerwacji
+                    </div>
+
+                    <div class="button warn" onclick="prev()">
+                        Popraw dane
+                    </div>
+
+                    <div class="button error" onclick="cancel()">
+                        Anuluj
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
         <div id="step3" class="step">
 
-            <h4>
-                Dziękujemy za dokonanie rezerwacji
-            </h4>
+            <div id="thanks">
+                <h4>
+                    Dziękujemy za dokonanie rezerwacji
+                </h4>
+
+                <p>
+                    Widzimy się <span id="flightDate"></span>!
+                </p>
+
+                <p>
+                    Pamiętaj o przygotowaniu dowodu osobistego, oraz gotówki do opłaty lotu.
+                    Podczas "odbioru" rezerwacji poprosimy Cię o dokument potwierdzający tożsamość
+                    oraz numer telefonu na który dokonano rezerwacji.
+                </p>
+
+                <p>
+                    Weź ze sobą jakąś przekąske i coś do picia. Lot balonem trfa ok. 3-4 godzin,
+                    także przyda Ci się coś do przegryzenia.
+                </p>
+
+                <div class="button" onclick="toMainPage()">
+                    Wróć na stronę główną
+                </div>
+            </div>
 
         </div>
 
     </div>
-</div>
-
-<div onclick="next()">
-    Next
-</div>
-
-<div onclick="prev()">
-    Prev
 </div>
 
 <footer>
