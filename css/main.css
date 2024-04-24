@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.w9{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.w8{
+    width: 80%;
+    margin: 0 auto;
+}
+.h100{
+    height: 100%;
+}
+
+.mc{
+    margin: 50px auto;
+}
+
+.button-group .button{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.warn{
+    background: #ffffd4 !important;
+}
+
+.error{
+    background: #ffa2a2 !important;
+}

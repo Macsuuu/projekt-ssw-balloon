@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <title>Balloon.pl - Nowości</title>
+
+    <meta name="description" content="Zarezerwuj wymarzony lot balonem nad warszawą.
+    Piękne wspomnienie na całe życie. Wpadnij do nas ze znajomymi. W grupie taniej.">
+    <meta name="keywords" content="Lot, Balon, Tanio, Rozrywka, Emocje, Przeżycia">
+    <meta name="author" content="Maciej Bedyk s31573">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/otherPage.css" type="text/css">
+    <link rel="stylesheet" href="../css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="../css/desktop.css" type="text/css">
+
+    <!--JS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/rezerwacje.js" defer></script>
+
+    <!--Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Google Material Icons-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+<nav>
+
+    <div class="mobile">
+        <div class="w8 h100">
+            <div class="mobile-nav-header">
+                <div class="mobile-logo">
+                    <img id="whiteLogo" src="../imgs/logo_white.png" alt="Balon Logo">
+                    <img id="blackLogo" style="display: none;" src="../imgs/logo.png" alt="Balon Logo">
+                    <p>Balloon</p>
+                </div>
+                <div class="mobile-burger">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav-body">
+            <a href="..">Strona główna</a>
+            <a href="../nowosci/index.html">Nowości</a>
+            <a href="../rezerwacje/index.html">Rezerwacje</a>
+            <a href="../kontakt/index.html">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="desktop">
+        <div class="w8 h100">
+            <div class="desktop-nav-header">
+                <div class="mobile-logo">
+                    <img id="whiteDLogo" src="../imgs/logo_white.png" alt="Balon Logo">
+                    <img id="blackDLogo" style="display: none;" src="../imgs/logo.png" alt="Balon Logo">
+                    <p>Balloon</p>
+                </div>
+                <div class="links">
+                    <a href="..">Strona główna</a>
+                    <a href="../nowosci/index.html">Nowości</a>
+                    <a href="../rezerwacje/index.html">Rezerwacje</a>
+                    <a href="../kontakt/index.html">Kontakt</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</nav>
+
+<div class="hub"></div>
+
+<div class="baner">
+    <div class="baner-bg">
+        <img src="../imgs/pexels-hatice-baran-153179658-19770764.jpg" alt="">
+    </div>
+
+    <div class="baner-header">
+        <h2>
+            Rezerwacje
+        </h2>
+    </div>
+</div>
+
+<div id="steps-frame">
+    <div id="steps">
+
+        <div id="step1" class="step">
+
+            <form id="rez-form">
+
+                <h4>
+                    Zarezerwuj lot balonem
+                </h4>
+
+                <p class="note">**Przeloty realizujemy raz dziennie o godz. 11:00</p>
+
+                <div class="input-field">
+                    <input type="date" name="data" id="data" >
+                    <label for="data">Wybierz datę przelotu:</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="number" name="osoby" id="osoby" min="0" max="10" step="1" placeholder=" ">
+                    <label for="osoby">Ilość osób:</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="name" id="name" placeholder=" ">
+                    <label for="name">Imię i nazwisko:</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="email" id="email" placeholder=" ">
+                    <label for="email">Adres e-mail:</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="nrTel" id="tel" placeholder=" ">
+                    <label for="tel">Nr Telefonu:</label>
+                </div>
+
+                <div class="button" onclick="next()">
+                    Przejdź do podsumowania
+                </div>
+
+            </form>
+
+        </div>
+
+        <div id="step2" class="step">
+
+            <div id="pds">
+                <h4>
+                    Podsumowanie
+                </h4>
+
+                <div class="grid">
+
+                    <div class="summ">
+                        <p class="head2">
+                            Data lotu:
+                        </p>
+                        <p class="ct" id="pdsData">
+                            24.04.2024
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Ilość osób:
+                        </p>
+                        <p class="ct" id="pdsOsoby">
+                            10
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Imię i nazwisko:
+                        </p>
+                        <p class="ct" id="pdsName">
+                            Maciej Bedyk
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Adres email:
+                        </p>
+                        <p class="ct" id="pdsEmail">
+                            maciekbedyk1@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Nr. Tel.:
+                        </p>
+                        <p class="ct" id="pdsTel">
+                            668419894
+                        </p>
+                    </div>
+
+                    <div class="summ">
+                        <p class="head2">
+                            Cena:
+                        </p>
+                        <p class="ct" id="pdsPrice">
+                            5999,00 PLN
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="note">
+                    **Płatność na miejscu GOTÓWKĄ.
+                </div>
+
+                <div class="button-group">
+                    <div class="button" onclick="next()">
+                        Dokonaj rezerwacji
+                    </div>
+
+                    <div class="button warn" onclick="prev()">
+                        Popraw dane
+                    </div>
+
+                    <div class="button error" onclick="cancel()">
+                        Anuluj
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="step3" class="step">
+
+            <div id="thanks">
+                <h4>
+                    Dziękujemy za dokonanie rezerwacji
+                </h4>
+
+                <p>
+                    Widzimy się <span id="flightDate"></span>!
+                </p>
+
+                <p>
+                    Pamiętaj o przygotowaniu dowodu osobistego, oraz gotówki do opłaty lotu.
+                    Podczas "odbioru" rezerwacji poprosimy Cię o dokument potwierdzający tożsamość
+                    oraz numer telefonu na który dokonano rezerwacji.
+                </p>
+
+                <p>
+                    Weź ze sobą jakąś przekąske i coś do picia. Lot balonem trfa ok. 3-4 godzin,
+                    także przyda Ci się coś do przegryzenia.
+                </p>
+
+                <div class="button" onclick="toMainPage()">
+                    Wróć na stronę główną
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<footer>
+
+    <div class="flx">
+        <div class="ctc">
+            <h3>Balloon Sp. Z. o. o.</h3>
+            <div class="loc">
+                <div class="f">
+                <span class="material-symbols-outlined">
+                location_on
+            </span> ul. Jakaś 19a, <br> 00-000 Warszawa
+                </div>
+            </div>
+            <div class="contact">
+                <div class="f">
+                <span class="material-symbols-outlined">
+                phone_in_talk
+            </span> +48 000 000 000
+                </div>
+                <div class="f">
+                <span class="material-symbols-outlined">
+                mail
+            </span> kontakt@balloon.pl
+                </div>
+            </div>
+        </div>
+        <div class="footerNav">
+            <a href="">Strona główna</a>
+            <a href="nowosci/index.html">Nowości</a>
+            <a href="rezerwacje/index.html">Rezerwacje</a>
+            <a href="kontakt/index.html">Kontakt</a>
+            <a href="">Regulamin usługi</a>
+            <a href="">Polityka prywatności</a>
+        </div>
+    </div>
+    <div class="r">
+        Balloon.pl &copy; 2024 - Wszelkie prawa zastrzeżone. <br>
+        Stworzona przez: Maciej Bedyk (Projekt SSW PJATK)
+    </div>
+</footer>
+
+</body>
+</html>
